@@ -52,27 +52,9 @@ nothing to compare against yet). Run it again after manually editing a
 price in `prices.db` if you want to confirm a notification actually fires,
 or just wait for a real price drop.
 
-## 5. Push this to a GitHub repo
 
-```bash
-cd playstore-tracker
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
 
-## 6. Add your bot token and chat ID as repo secrets
-
-In your GitHub repo: **Settings -> Secrets and variables -> Actions ->
-New repository secret**. Add two secrets:
-
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
-
-## 7. That's it — the workflow is already set up
+## 5. That's it — the workflow is already set up
 
 `.github/workflows/daily.yml` is included and will:
 
