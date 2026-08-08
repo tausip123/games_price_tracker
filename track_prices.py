@@ -1,14 +1,4 @@
-"""
-Play Store Price Drop Tracker
-------------------------------
-Checks the price of a fixed list of apps (apps.json) once a day,
-compares against the last known price (stored in prices.db, an
-SQLite file committed back to the repo by the GitHub Action),
-and sends a Telegram message if the price has dropped.
 
-In-app purchase prices are intentionally ignored - only the base
-app price (what you pay to install it) is tracked.
-"""
 
 import json
 import os
